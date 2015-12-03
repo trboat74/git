@@ -9,9 +9,9 @@ public class bootcamp {
 	}
 
 	// TASK 1
-	public static int smallest(int go, int[] yellow) {
+	public static int smallest(int[] yellow ) {
 		int blue = yellow[0];
-		for (int i = 0; i < go; ++i) {
+		for (int i = 0; i < yellow.length; ++i) {
 			if (yellow[i] < blue) {
 				blue = yellow[i];
 			}
@@ -54,7 +54,7 @@ public class bootcamp {
 	// TASK 5
 	public static int[] shrink(int[] tree) {
 
-		int[] banana = new int[1 / 2 * tree.length];
+		int[] banana = new int[(1 / 2) * tree.length];
 		for (int i = 0; i < tree.length; ++i) {
 			banana[i] = tree[i];
 		}
